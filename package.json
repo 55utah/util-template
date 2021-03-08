@@ -1,0 +1,35 @@
+{
+  "name": "util-template",
+  "version": "0.0.1-alpha.15",
+  "description": "util-template",
+  "keywords": [
+    "util-template"
+  ],
+  "author": "",
+  "license": "ISC",
+  "main": "dist/util-template.js",
+  "directories": {
+    "lib": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "module": "dist/util-template.es.js",
+  "typings": "dist/index.d.ts",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "build": "rollup -c --environment BUILD:production",
+    "build:dev": "rollup -c",
+    "prepublishOnly": "yarn build"
+  },
+  "devDependencies": {
+    "rollup": "^2.6.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-buble": "^0.19.8",
+    "rollup-plugin-typescript2": "^0.27.0",
+  },
+  "sideEffects": false
+}
