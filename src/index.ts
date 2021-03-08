@@ -2,7 +2,7 @@
 
 
 const time = () => {
-  return Date().now()
+  return Date.now()
 }
 
 export const getCurrentTime = () => {
